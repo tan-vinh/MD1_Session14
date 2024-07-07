@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ["lê công bình", "vũ thị dung", "lê công thành vinh", "lê thị hồng ngân"];
+        var str = prompt("Nhập vào một chuỗi");
+
+        function check(array, chuoi) {
+            for (var i = 0; i < array.length; i++) {
+                var kiemTra = false;
+                var arr1 = array[i].split(" ");
+                for (var j = 0; j < arr1.length; j++) {
+                    if(chuoi==arr1[j]){
+                        kiemTra = true;
+                    }
+                }
+                if(kiemTra == true){
+                    document.write(`Phần tử có trong mảng có chứa chuỗi là ${array[i]} <br>`)
+                }
+            }
+        }
+
+        check(arr,str);
+    </script>
+</body>
+</html>
