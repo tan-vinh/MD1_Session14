@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Nhập một chuỗi");
+
+        function count(chuoi) {
+            var arr = chuoi.split(" ");
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++) {
+                sum += arr[i].length;
+            }
+            document.write(`Số ký tự trong chuỗi là ${sum}`)
+        }
+
+        count(str);
+    </script>
+</body>
+</html>

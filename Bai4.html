@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Nhập một chuỗi");
+        var kyTu = prompt("Nhập một ký tự");
+
+        function check(chuoi, chu) {
+            var arr = chuoi.split('');
+            var count = 0;
+            for (var i = 0; i < arr.length; i++) {
+                if (chu==arr[i]) {
+                    count++;
+                }
+            }
+            document.write(`Số lần xuất hiện của ${chu} trong chuỗi là ${count}`)
+        }
+
+        check(str,kyTu);
+    </script>
+</body>
+</html>

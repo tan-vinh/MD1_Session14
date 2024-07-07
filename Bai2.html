@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = +prompt("Số phần tử trong mảng");
+        var arr = [];
+        for (var i = 0; i < n; i++) {
+            arr[i] = prompt("Nhập phần tử vào đây");
+        }
+
+        function doDai(array) {
+            var pTu;
+            var check = 0;
+            for (var i = 0; i < array.length; i++) {
+                if (check < array[i].length) {
+                    check = array[i].length;
+                    pTu = array[i];
+                }
+            }
+            document.write(`Phần tử có độ dài lớn nhất trong mảng là ${pTu}`)
+        }
+
+        doDai(arr);
+    </script>
+</body>
+</html>
