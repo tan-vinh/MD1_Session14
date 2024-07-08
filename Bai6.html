@@ -10,11 +10,14 @@
         var str = prompt("Nhập chuỗi");
 
         function stnew(str1) {
-            var strnew = str1.toUpperCase();
-            document.write(strnew);
+            var strArr = str1.split(" ");
+            for (var i=0; i<strArr.length; i++){
+                strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1) + " ";
+            }
+            return strArr.join(" ");
         }
 
-        stnew(str);
+        document.write(stnew(str));
     </script>
 </body>
 </html>
